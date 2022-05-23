@@ -16,10 +16,9 @@ Output: [4,9,9,49,121]
 Solution1:
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
+        z = []
         for i in nums:
-            z = []
-            for i in nums:
-                sqr = i * i
-                z.append(sqr)
-            z.sort()
-            return (z)
+            k = i * i
+            z.append(k)
+        z.sort()
+        return (z)
