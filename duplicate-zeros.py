@@ -17,15 +17,15 @@ Solution 1:
 class Solution:
     def duplicateZeros(self, arr: List[int]) -> None:
         len_ = len(arr)
-        i = 0
-        while( i < len_):
-            if arr[i] == 0:
-                arr.insert(i, 0) # i=index, 0=item
+        possible_dups = 0
+        while( possible_dups < len_):
+            if arr[possible_dups] == 0:
+                arr.insert(possible_dups, 0) # possible_dups=index, 0=item
                 arr.pop() # remove the last element of the array and also returns the removed element. This function decreases the len of array by 1.
-                i += 2
+                possible_dups += 2
                 continue
             else:
-                i += 1
+                possible_dups += 1
 
 
 Solution 2: covering edge cases
