@@ -21,7 +21,7 @@ class Solution:
         while( i < len_):
             if arr[i] == 0:
                 arr.insert(i, 0) # i=index, 0=item
-                arr.pop() # remove the last element of the array and also returns the removed element. This function decreases the len of array, # by 1.
+                arr.pop() # remove the last element of the array and also returns the removed element. This function decreases the len of array by 1.
                 i += 2
                 continue
             else:
